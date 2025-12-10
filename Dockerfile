@@ -49,7 +49,7 @@ RUN mkdir -p /data
 VOLUME ["/data"]
 
 # 8. Default working dir
-WORKDIR /opt/depict
+WORKDIR /data
 
 # Default shell
 CMD ["bash"]
