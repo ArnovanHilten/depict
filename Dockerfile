@@ -45,11 +45,11 @@ COPY . /opt/depict
 ENV DEPICT_HOME=/opt/depict
 
 # 7. Data directory to mount user data (configs, GWAS, outputs)
-RUN mkdir -p /data
-VOLUME ["/data"]
+RUN mkdir -p /userdata
+VOLUME ["/userdata"]
 
 # 8. Default working dir
-WORKDIR /data
+WORKDIR /userdata
 
 # Default shell
 CMD ["bash"]
