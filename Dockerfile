@@ -42,6 +42,9 @@ RUN mkdir -p /opt/plink && \
 # 6. Clone DEPICT
 WORKDIR /opt
 COPY . /opt/depict
+
+RUN ln -s /opt/depict/run_depict.sh /usr/local/bin/depict-run
+
 ENV DEPICT_HOME=/opt/depict
 
 # 7. Data directory to mount user data (configs, GWAS, outputs)
